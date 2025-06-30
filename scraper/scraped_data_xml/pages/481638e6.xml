@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<webpage>
+  <url>https://www.cmu.edu/health-services/images/pdfs/healthconnect_update-profile.pdf</url>
+  <type>pdf</type>
+  <title>healthconnect_update-profile.pdf</title>
+  <scraped_at>2025-06-30T14:21:51.439144</scraped_at>
+  <is_insurance>False</is_insurance>
+  <pdf_metadata>
+    <pages>7</pages>
+    <author>Phyllis Lombardi</author>
+    <title/>
+    <subject/>
+    <creation_date>D:20171218120701-05'00'</creation_date>
+  </pdf_metadata>
+  <full_text>1) Click the HealthConnect icon anywhere on our site.
+
+2) Enter Andrew ID and Password
+
+3) Confirm your date of birth
+
+4) Click on Profile
+
+5) Click on Edit next to name, gender identity, or pronouns to update.
+
+6) If your legal name is different from the name you go by, type the name you go by in the “new preferred name” field and select continue.
+7) If your gender identity differs from your sex assigned at birth, select a gender identity from the drop-down menu. If your identity isn’t
+represented in the drop-down menu, please let us know so we can advocate for expanded options.
+
+8) You can type your pronouns in the open text field, or select from the drop down menu.
+
+</full_text>
+  <pages>
+    <page number="1">1) Click the HealthConnect icon anywhere on our site.</page>
+    <page number="2">2) Enter Andrew ID and Password</page>
+    <page number="3">3) Confirm your date of birth</page>
+    <page number="4">4) Click on Profile</page>
+    <page number="5">5) Click on Edit next to name, gender identity, or pronouns to update.</page>
+    <page number="6">6) If your legal name is different from the name you go by, type the name you go by in the “new preferred name” field and select continue.
+7) If your gender identity differs from your sex assigned at birth, select a gender identity from the drop-down menu. If your identity isn’t
+represented in the drop-down menu, please let us know so we can advocate for expanded options.</page>
+    <page number="7">8) You can type your pronouns in the open text field, or select from the drop down menu.</page>
+  </pages>
+</webpage>

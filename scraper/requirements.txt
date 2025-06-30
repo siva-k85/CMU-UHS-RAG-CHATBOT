@@ -1,0 +1,30 @@
+# CMU Health Services Web Scraper Requirements
+
+# Web scraping
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==5.1.0
+
+# PDF processing
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+pillow==10.1.0
+
+# Natural language processing
+nltk==3.8.1
+
+# Data processing
+pandas==2.2.0
+numpy==1.26.3
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1
+
+# Optional: For enhanced scraping capabilities
+selenium==4.17.2  # For JavaScript-heavy pages
+playwright==1.41.0  # Alternative to Selenium
+
+# Optional: For data export
+openpyxl==3.1.2  # Excel export
+markdown==3.5.2  # Markdown generation

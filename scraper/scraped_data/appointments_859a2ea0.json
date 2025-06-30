@@ -1,0 +1,21 @@
+{
+  "url": "https://www.cmu.edu/health-services/index.html",
+  "title": "University Health Services - \n                University Health Services -     Student Affairs - Carnegie Mellon University",
+  "content": "University Health Services\nWelcome, students! UHS offers high-quality care for all students.\nStudents are seen\nby appointment only.\nSame-day appointments are available on a limited basis depending on availability.\nWe always do our best to work with patients with acute illnesses and injuries.\nTo increase the likelihood of being seen sooner please contact us as early as possible.\nIf no appointments are available, students will be assessed by a triage nurse and provided with an appropriate plan of care which may include: guidance on symptom management; referrals to urgent/emergency care; scheduling for the next available appointment.\nCall us at 412-268-2157, option 2 to discuss your needs.\nCOVID-19 Health Information\nSummer Hours\nMonday - Wednesday: 8:30 am - 5 pm\nThursday: 10 am - 5 pm\nFriday: 8:30 am - 5 pm\nSaturday: Closed\nSunday: Closed\nHoliday Closures:\nMay 23rd\nMay 26th\nJune 19th\nJuly 3rd\nJuly 4th\nRegular Hours\nMonday - Wednesday: 8:30 am - 7 pm\nThursday: 10 am - 7 pm\nFriday: 8:30 am - 5 pm\nSaturday: 10 am - 2 pm\nSunday: Closed\nClosed 12-12:45 pm for cleaning\nAfter-hours & Emergency Care\nFor medical advice when UHS is closed, call us at 412-268-2157 to connect with our after-hours line\nLocal Urgent Care Centers\nEmergencies:\ncall\nUniversity Police\nat 412-268-2323 or call 911\nUniversity Health Services\n100 Tech Street, 3rd Floor\nPittsburgh, PA 15213\nPhone: 412-268-2157\nFax: 412-268-6357",
+  "extracted_info": {
+    "phone_numbers": [
+      "412-268-6357",
+      "412-268-2157",
+      "412-268-2323"
+    ],
+    "emails": [],
+    "hours": [],
+    "addresses": [
+      "100 Tech Street"
+    ],
+    "services": []
+  },
+  "category": "appointments",
+  "timestamp": "2025-06-28T18:15:53.637998",
+  "depth": 2
+}

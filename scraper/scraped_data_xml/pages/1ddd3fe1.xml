@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<webpage>
+  <url>https://www.cmu.edu/health-services/health-education-and-resources/_ec-vending-instructions-hp.pdf</url>
+  <type>pdf</type>
+  <title>_ec-vending-instructions-hp.pdf</title>
+  <scraped_at>2025-06-30T14:21:42.258969</scraped_at>
+  <is_insurance>False</is_insurance>
+  <pdf_metadata>
+    <pages>1</pages>
+    <author>Noah Riley</author>
+    <title> EC Vending Instructions-HP</title>
+    <subject/>
+    <creation_date>D:20240723182538+00'00'</creation_date>
+  </pdf_metadata>
+  <full_text>How to Use
+Emergency
+Contraception
+Emergency contraception (EC) should be
+taken after unprotected vaginal sex to
+reduce the risk of pregnancy when birth
+control was not used or a condom broke.
+May use up to 72 hours after unprotected
+sex
+Effectiveness decreases the longer you
+wait
+Effectiveness decreases if over 165 lbs
+Call UHS 412-268-2157, Option 2 for
+questions
+If you need EC in the future, remember it is
+covered by the student health insurance
+plan and available at UHS!
+Designed by Ash Gelber
+Peer Health Advocate, 2023
+
+</full_text>
+  <pages>
+    <page number="1">How to Use
+Emergency
+Contraception
+Emergency contraception (EC) should be
+taken after unprotected vaginal sex to
+reduce the risk of pregnancy when birth
+control was not used or a condom broke.
+May use up to 72 hours after unprotected
+sex
+Effectiveness decreases the longer you
+wait
+Effectiveness decreases if over 165 lbs
+Call UHS 412-268-2157, Option 2 for
+questions
+If you need EC in the future, remember it is
+covered by the student health insurance
+plan and available at UHS!
+Designed by Ash Gelber
+Peer Health Advocate, 2023</page>
+  </pages>
+  <extracted_tables>
+    <table page="1">
+      <row>
+        <cell/>
+        <cell>How to Use
+Emergency
+Contraception</cell>
+        <cell/>
+      </row>
+      <row>
+        <cell/>
+        <cell>Emergency contraception (EC) should be
+taken after unprotected vaginal sex to
+reduce the risk of pregnancy when birth
+control was not used or a condom broke.
+May use up to 72 hours after unprotected
+sex
+Effectiveness decreases the longer you
+wait
+Effectiveness decreases if over 165 lbs
+Call UHS 412-268-2157, Option 2 for
+questions
+If you need EC in the future, remember it is
+covered by the student health insurance
+plan and available at UHS!</cell>
+        <cell/>
+      </row>
+      <row>
+        <cell/>
+        <cell>Designed by Ash Gelber
+Peer Health Advocate, 2023</cell>
+        <cell/>
+      </row>
+    </table>
+  </extracted_tables>
+</webpage>

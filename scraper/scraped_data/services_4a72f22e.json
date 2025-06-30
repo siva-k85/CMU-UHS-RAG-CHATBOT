@@ -1,0 +1,17 @@
+{
+  "url": "https://www.cmu.edu/health-services/about-us/index.html",
+  "title": "About Us -     University Health Services -     Student Affairs - Carnegie Mellon University",
+  "content": "In order to maintain the safest environment possible for patient care,\nall services are being delivered by appointment only.\nPlease call us at 412-268-2157 to discuss your needs.",
+  "extracted_info": {
+    "phone_numbers": [
+      "412-268-2157"
+    ],
+    "emails": [],
+    "hours": [],
+    "addresses": [],
+    "services": []
+  },
+  "category": "services",
+  "timestamp": "2025-06-28T18:16:16.220050",
+  "depth": 2
+}

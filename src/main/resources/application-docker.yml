@@ -1,0 +1,166 @@
+spring:
+  application:
+    name: CMU UHS RAG Chatbot
+  
+  # PostgreSQL Configuration
+  datasource:
+    url: jdbc:postgresql://postgres:5432/cmu_health_rag
+    username: ${SPRING_DATASOURCE_USERNAME:raguser}
+    password: ${SPRING_DATASOURCE_PASSWORD:changeme}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      connection-timeout: 20000
+      idle-timeout: 300000
+      max-lifetime: 1200000
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        format_sql: true
+    show-sql: false
+  
+  # Redis Configuration
+  data:
+    redis:
+      host: ${SPRING_REDIS_HOST:redis}
+      port: ${SPRING_REDIS_PORT:6379}
+      password: ${SPRING_REDIS_PASSWORD:changeme}
+      timeout: 60000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+          max-wait: -1ms
+  
+  cache:
+    type: redis
+    redis:
+      time-to-live: 3600000  # 1 hour
+      cache-null-values: false
+      enable-statistics: true
+  
+  # File Upload Configuration
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+# Server Configuration
+server:
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+  error:
+    include-message: always
+    include-binding-errors: always
+
+# Management endpoints for health checks
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+  health:
+    redis:
+      enabled: true
+    db:
+      enabled: true
+
+# Logging Configuration
+logging:
+  level:
+    edu.cmu.uhs.chatbot: INFO
+    dev.langchain4j: INFO
+    org.springframework.web: INFO
+    org.springframework.data: INFO
+    org.hibernate.SQL: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: /app/logs/application.log
+    max-size: 10MB
+    max-history: 30
+
+# OpenAI Configuration
+openai:
+  api:
+    key: ${OPENAI_API_KEY}
+    model: gpt-3.5-turbo
+    temperature: 0.7
+    max-tokens: 2000
+    timeout: 60
+
+# LangChain4j Configuration
+langchain4j:
+  embedding:
+    dimension: 1536  # OpenAI embeddings dimension
+  vector-store:
+    type: postgresql-pgvector
+    table-name: embeddings
+    similarity-threshold: 0.7
+  retriever:
+    max-results: 5
+    min-score: 0.7
+
+# CORS Configuration
+cors:
+  allowed-origins: "*"
+  allowed-methods: GET,POST,PUT,DELETE,OPTIONS
+  allowed-headers: "*"
+  exposed-headers: X-Total-Count
+  allow-credentials: true
+  max-age: 3600
+
+# Application-specific settings
+app:
+  security:
+    jwt:
+      secret: ${JWT_SECRET:your-secret-key-here}
+      expiration: 86400000  # 24 hours
+  
+  rate-limiting:
+    enabled: true
+    requests-per-minute: 60
+  
+  cache:
+    embeddings:
+      enabled: true
+      ttl: 86400  # 24 hours in seconds
+    
+    responses:
+      enabled: true
+      ttl: 3600   # 1 hour in seconds
+  
+  scraper:
+    schedule:
+      enabled: true
+      cron: "0 0 2 * * ?"  # Daily at 2 AM
+    max-depth: 3
+    allowed-domains:
+      - cmu.edu/health-services
+      - cmu.edu/counseling
+      - cmu.edu/wellness
+    
+  monitoring:
+    metrics:
+      enabled: true
+      export:
+        prometheus:
+          enabled: true

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<webpage>
+  <url>https://www.cmu.edu/health-services/health-education-and-resources/peer-health/information-for-phas/index.html</url>
+  <type>html</type>
+  <title>Web Login Service - Loading Session Information</title>
+  <scraped_at>2025-06-30T14:22:05.868663</scraped_at>
+  <is_insurance>False</is_insurance>
+  <description/>
+  <content>
+    <headings>
+      <heading level="h1">Web Login</heading>
+      <heading level="h2">Carnegie Mellon University</heading>
+    </headings>
+    <paragraphs/>
+    <lists/>
+    <tables/>
+  </content>
+  <links>
+    <link href="https://www.cmu.edu/css/cmu-general-purpose.css" is_pdf="False"/>
+    <link href="https://www.cmu.edu/css/login.css" is_pdf="False"/>
+    <link href="https://www.cmu.edu/css/ie.css" is_pdf="False"/>
+    <link href="https://www.cmu.edu/css/iphone.css" is_pdf="False"/>
+    <link href="https://www.cmu.edu/" is_pdf="False">Carnegie Mellon University</link>
+  </links>
+</webpage>

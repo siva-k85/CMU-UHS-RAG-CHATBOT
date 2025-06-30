@@ -1,0 +1,13 @@
+{
+  "total_pages": 41,
+  "categories": {
+    "appointments": 4,
+    "services": 23,
+    "hours_location": 3,
+    "insurance": 10,
+    "mental_health": 1
+  },
+  "base_url": "https://www.cmu.edu/health-services/",
+  "scrape_time": 91.87698721885681,
+  "timestamp": "2025-06-28T18:17:21.846730"
+}

@@ -1,0 +1,85 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  namespace: cmu-rag
+  labels:
+    app: cmu-rag-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cmu-rag-backend
+  template:
+    metadata:
+      labels:
+        app: cmu-rag-backend
+    spec:
+      containers:
+      - name: backend
+        image: us-central1-docker.pkg.dev/${GCP_PROJECT_ID}/cmu-rag-repo/backend:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: "kubernetes"
+        - name: OPENAI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: cmu-rag-secrets
+              key: openai-api-key
+        - name: SPRING_DATASOURCE_URL
+          value: "jdbc:postgresql://postgres-service:5432/cmu_health_rag"
+        - name: SPRING_DATASOURCE_USERNAME
+          value: "raguser"
+        - name: SPRING_DATASOURCE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: cmu-rag-secrets
+              key: postgres-password
+        - name: SPRING_REDIS_HOST
+          value: "redis-service"
+        - name: SPRING_REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: cmu-rag-secrets
+              key: redis-password
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: cmu-rag-secrets
+              key: jwt-secret
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /actuator/health/liveness
+            port: 8080
+          initialDelaySeconds: 60
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /actuator/health/readiness
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 5
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: cmu-rag
+spec:
+  selector:
+    app: cmu-rag-backend
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+  type: ClusterIP

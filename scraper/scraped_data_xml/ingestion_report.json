@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-06-30 14:42:41",
+  "results": {
+    "total": 214,
+    "success": 213,
+    "failed": 1,
+    "batches": 22
+  },
+  "initial_count": 0,
+  "final_count": 213
+}

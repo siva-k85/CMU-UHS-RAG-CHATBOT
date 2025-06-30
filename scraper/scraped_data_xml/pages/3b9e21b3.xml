@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<webpage>
+  <url>https://www.cmu.edu/health-services/health-education-and-resources/bedsider-contraception-info-business-card.pdf</url>
+  <type>pdf</type>
+  <title>bedsider-contraception-info-business-card.pdf</title>
+  <scraped_at>2025-06-30T14:21:41.572456</scraped_at>
+  <is_insurance>False</is_insurance>
+  <pdf_metadata>
+    <pages>2</pages>
+    <author>Health Promotion-CMU</author>
+    <title>Bedsider Contraception for Vendin</title>
+    <subject/>
+    <creation_date>D:20240306215523+00'00'</creation_date>
+  </pdf_metadata>
+  <full_text>WHAT‘S THE CHANCE OF GETTING
+PREGNANT IN A YEAR?
+Less than
+1 in 100
+6-9 in 100,
+depending upon method
+12-24 in 100,
+depending upon method
+
+Birth control is available at
+UHS and covered by SHIP
+For information and to schedule,
+call 412-268-2157, option 2
+
+</full_text>
+  <pages>
+    <page number="1">WHAT‘S THE CHANCE OF GETTING
+PREGNANT IN A YEAR?
+Less than
+1 in 100
+6-9 in 100,
+depending upon method
+12-24 in 100,
+depending upon method</page>
+    <page number="2">Birth control is available at
+UHS and covered by SHIP
+For information and to schedule,
+call 412-268-2157, option 2</page>
+  </pages>
+  <extracted_tables>
+    <table page="2">
+      <row>
+        <cell/>
+        <cell>Birth control is available at
+UHS and covered by SHIP
+For information and to schedule,
+call 412-268-2157, option 2</cell>
+      </row>
+      <row>
+        <cell/>
+        <cell/>
+      </row>
+      <row>
+        <cell/>
+        <cell/>
+      </row>
+    </table>
+  </extracted_tables>
+</webpage>
