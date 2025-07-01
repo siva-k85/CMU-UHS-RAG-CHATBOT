@@ -21,6 +21,14 @@ A comprehensive Retrieval-Augmented Generation (RAG) chatbot system designed for
 - **RESTful API**: Well-documented API endpoints
 - **Health Monitoring**: Built-in health checks and metrics
 
+### Generation Features
+- **Hallucination Detection**: Uses context matching and logit thresholds to catch unsupported claims before responses are delivered. When a potential hallucination is found, the backend rechecks the source documents or requests clarification.
+- **Response Verification**: Every generated answer is cross-referenced with retrieved documents. Text is only returned if it matches the source and includes explicit citations for transparency.
+- **Structured Output Formats**: Supports FHIR resources and HL7 segments so responses can feed directly into electronic health record systems.
+- **Multi-Language Support**: Provides translations for languages commonly used by the CMU community and gracefully falls back to English when a translation is unavailable.
+- **Adjustable Response Complexity**: An API parameter controls reading level, allowing simple summaries for general users or detailed clinical explanations for professionals.
+- **Template-Based Queries**: Common questions leverage predefined templates to ensure consistent phrasing and faster response times.
+
 ## 🏗️ Architecture
 
 ```
