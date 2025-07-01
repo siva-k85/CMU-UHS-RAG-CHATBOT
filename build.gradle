@@ -56,5 +56,5 @@ tasks.named('test') {
 }
 
 springBoot {
-    mainClass = 'edu.cmu.uhs.chatbot.SimplifiedApplication'
+    mainClass = 'edu.cmu.uhs.chatbot.RagChatbotApplication'
 }

@@ -28,9 +28,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Slf4j
 public class VectorStoreService {
     
-    private EmbeddingModel embeddingModel;
-    private EmbeddingStore<TextSegment> embeddingStore;
-    private final AtomicInteger documentCount = new AtomicInteger(0);
+    protected EmbeddingModel embeddingModel;
+    protected EmbeddingStore<TextSegment> embeddingStore;
+    protected final AtomicInteger documentCount = new AtomicInteger(0);
     
     @PostConstruct
     public void init() {

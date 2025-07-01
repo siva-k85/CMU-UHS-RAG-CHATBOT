@@ -236,3 +236,20 @@ frontend_*.log
 NOTES.md
 TODO.md
 PRIVATE_*.md
+
+# Claude settings
+.claude/
+
+# Disabled files
+*.disabled
+*.disabled2
+
+# Scraped data cache
+scraper/scraped_*/
+
+# Backup directories
+backup/
+backups/
+
+# Test scripts
+test_*.sh
