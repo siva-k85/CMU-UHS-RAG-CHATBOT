@@ -19,6 +19,10 @@ public class MetricsService {
     private final Map<String, Integer> topicCounts = new ConcurrentHashMap<>();
     private final Map<String, Integer> hourlyActivity = new ConcurrentHashMap<>();
     private final Map<String, List<Long>> sessionResponseTimes = new ConcurrentHashMap<>();
+    private final Map<String, Long> cacheMetrics = new ConcurrentHashMap<>();
+    private final Map<String, Long> errorCounts = new ConcurrentHashMap<>();
+    private long totalQueries = 0;
+    private long totalResponseTime = 0;
     
     public void recordMetric(ChatMetric metric) {
         // Add unique ID
@@ -265,5 +269,45 @@ public class MetricsService {
                 return item;
             })
             .collect(Collectors.toList());
+    }
+    
+    public void recordCacheHit(String cacheType) {
+        cacheMetrics.merge(cacheType + "_hits", 1L, Long::sum);
+    }
+    
+    public void recordCacheMiss(String cacheType) {
+        cacheMetrics.merge(cacheType + "_misses", 1L, Long::sum);
+    }
+    
+    public void recordResponseTime(long responseTimeMs) {
+        totalQueries++;
+        totalResponseTime += responseTimeMs;
+    }
+    
+    public void recordQuery(String query, String response, String sessionId) {
+        ChatMetric metric = new ChatMetric();
+        metric.setQuery(query);
+        metric.setResponse(response);
+        metric.setSessionId(sessionId);
+        metric.setTimestamp(LocalDateTime.now());
+        metric.setResponseTimeMs(0L);
+        recordMetric(metric);
+    }
+    
+    public void recordError(String errorType) {
+        errorCounts.merge(errorType, 1L, Long::sum);
+    }
+    
+    public long getTotalQueries() {
+        return totalQueries;
+    }
+    
+    public double getAverageResponseTime() {
+        return totalQueries > 0 ? (double) totalResponseTime / totalQueries : 0;
+    }
+    
+    public double getErrorRate() {
+        long totalErrors = errorCounts.values().stream().mapToLong(Long::longValue).sum();
+        return totalQueries > 0 ? (double) totalErrors / totalQueries : 0;
     }
 }
