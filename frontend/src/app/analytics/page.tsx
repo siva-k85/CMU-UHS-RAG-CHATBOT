@@ -16,6 +16,7 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { format } from 'date-fns'
 import { motion } from 'framer-motion'
+import ThemeToggle from '@/components/theme-toggle'
 
 interface DashboardData {
   overview: {
@@ -126,8 +127,9 @@ export default function AnalyticsPage() {
                 <p className="text-gray-600 dark:text-gray-400 mt-1">CMU Health Services Chatbot Metrics</p>
               </div>
             </div>
-            <div className="text-sm text-gray-500">
-              Last updated: {new Date().toLocaleTimeString()}
+            <div className="flex items-center space-x-4 text-sm text-gray-500">
+              <span>Last updated: {new Date().toLocaleTimeString()}</span>
+              <ThemeToggle />
             </div>
           </div>
         </div>
