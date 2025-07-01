@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Heart, Send, Upload, Activity, Clock, Phone, MapPin, FileText, Sparkles, Bot, User, BarChart3 } from 'lucide-react'
+import ThemeToggle from '@/components/theme-toggle'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 
@@ -140,8 +141,8 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="flex items-center space-x-2"
                 onClick={() => window.location.href = '/analytics'}
               >
@@ -156,6 +157,7 @@ export default function Home() {
                 <Clock className="h-4 w-4" />
                 <span>Mon-Fri: 8:30 AM - 5:00 PM</span>
               </Button>
+              <ThemeToggle />
             </div>
           </div>
         </div>
