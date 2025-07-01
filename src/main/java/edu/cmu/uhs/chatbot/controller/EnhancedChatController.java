@@ -3,6 +3,7 @@ package edu.cmu.uhs.chatbot.controller;
 import edu.cmu.uhs.chatbot.model.ChatRequest;
 import edu.cmu.uhs.chatbot.model.ChatMetric;
 import edu.cmu.uhs.chatbot.service.EnhancedChatbotService;
+import edu.cmu.uhs.chatbot.service.QueryProcessingService;
 import edu.cmu.uhs.chatbot.service.WebScrapedDocumentService;
 import edu.cmu.uhs.chatbot.service.MetricsService;
 import lombok.RequiredArgsConstructor;
@@ -22,8 +23,9 @@ import jakarta.servlet.http.HttpSession;
 @RequiredArgsConstructor
 @Slf4j
 public class EnhancedChatController {
-    
+
     private final EnhancedChatbotService enhancedChatbotService;
+    private final QueryProcessingService queryProcessingService;
     private final WebScrapedDocumentService webScrapedDocumentService;
     private final MetricsService metricsService;
     
@@ -41,8 +43,13 @@ public class EnhancedChatController {
             session.setAttribute("sessionId", sessionId);
         }
         
-        // Process chat request
-        Map<String, Object> response = enhancedChatbotService.chatWithCitations(request.getMessage());
+        // Process query with multi-modal and NLP enhancements
+        String processedQuery = queryProcessingService.processQuery(request);
+        String intent = queryProcessingService.classifyIntent(processedQuery);
+
+        // Generate response using processed query
+        Map<String, Object> response = enhancedChatbotService.chatWithCitations(processedQuery);
+        response.put("intent", intent);
         
         // Calculate response time
         long responseTime = System.currentTimeMillis() - startTime;
@@ -50,11 +57,11 @@ public class EnhancedChatController {
         // Create metric
         ChatMetric metric = ChatMetric.builder()
             .sessionId(sessionId)
-            .query(request.getMessage())
+            .query(processedQuery)
             .response(response.get("response").toString())
             .timestamp(LocalDateTime.now())
             .responseTimeMs(responseTime)
-            .queryLength(request.getMessage().length())
+            .queryLength(processedQuery.length())
             .responseLength(response.get("response").toString().length())
             .citationsCount(((List<?>) response.getOrDefault("citations", List.of())).size())
             .relevantDocsCount((Integer) response.getOrDefault("sources_used", 0))
