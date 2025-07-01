@@ -1,0 +1,538 @@
+{
+  "url": "https://www.cmu.edu/health-services/leaving-cmu/index.html",
+  "scraped_at": "2025-06-30T20:18:28.240391",
+  "title": "Leaving CMU -     University Health Services -     Student Affairs - Carnegie Mellon University",
+  "content": [
+    {
+      "type": "h1",
+      "text": "Leaving CMU?"
+    },
+    {
+      "type": "p",
+      "text": "Before you embark on your next journey, make sure that you review this page thoroughly to learn more about access to services, your insurance plan and requesting your medical records."
+    },
+    {
+      "type": "h2",
+      "text": "Graduating Students"
+    },
+    {
+      "type": "p",
+      "text": "If you graduate in May, you can be seen at Health Services for two weeks following your graduation date. If you graduate in December, you can be seen at Health Services up until our winter holiday closure."
+    },
+    {
+      "type": "p",
+      "text": "If you are in Pittsburgh after that time and need services, we can help you findlocal providersfor your health care needs."
+    },
+    {
+      "type": "h4",
+      "text": "If you are enrolled in the CMU student health insurance plan:"
+    },
+    {
+      "type": "p",
+      "text": "You have that coverage until July 31. This is a national plan and can be used in any state at any facility that accepts the insurance plan."
+    },
+    {
+      "type": "p",
+      "text": "If you have an offer for employer-sponsored medical insurance, you are not required to cancel the CMU student medical insurance plan. You have the option to tell your employer that you have medical insurance in effect through July 31. The employer can then help you enroll in their plan effective August 1 because you would then have a loss of coverage (which is considered a qualifying life event for enrollment into a medical insurance plan outside of that plan's Open Enrollment period)."
+    },
+    {
+      "type": "p",
+      "text": "We strongly recommend comparing the student insurance plan with the one being offered by the employer. Pay close attention to not only the premiums, but deductible of the plans, co-pays, co-insurance, and the list of benefits offered."
+    },
+    {
+      "type": "h1",
+      "text": "Request Your Medical Records"
+    },
+    {
+      "type": "p",
+      "text": "Immunization records, test results, statements and after-visit summaries are all available to download/print from HealthConnect. Current students and recent graduates (within 90 days) can request additional medical records by using \"Messages\" inHEALTHCONNECT."
+    },
+    {
+      "type": "li",
+      "text": "Former students who no longer have access to HealthConnect must submit aConsent for Release of Medical Information Form (pdf)."
+    },
+    {
+      "type": "li",
+      "text": "Please note that UHS maintains patient records for 10 years; we are unable to provide records beyond 10 years."
+    },
+    {
+      "type": "li",
+      "text": "Students who received care at Counseling & Psychological Services (CaPS) must contact CaPS directly to request mental health records, at 412-268-2922."
+    }
+  ],
+  "meta_description": "Learn more about what to do when you leave Carnegie Mellon University in regards to requesting your medical records and other important steps",
+  "navigation": [
+    {
+      "text": "HealthConnect",
+      "url": "https://www.cmu.edu/healthconnect/index.html"
+    },
+    {
+      "text": "New Students",
+      "url": "https://www.cmu.edu/new-students/index.html"
+    },
+    {
+      "text": "Family & Parents",
+      "url": "https://www.cmu.edu/parents.html"
+    },
+    {
+      "text": "Student Insurance",
+      "url": "https://www.cmu.edu/student-insurance/index.html"
+    },
+    {
+      "text": "Enroll in the SHIP",
+      "url": "https://www.cmu.edu/student-insurance/ship-enrollment.html"
+    },
+    {
+      "text": "Waive the SHIP",
+      "url": "https://www.cmu.edu/student-insurance/waive.html"
+    },
+    {
+      "text": "Change or Cancel the SHIP",
+      "url": "https://www.cmu.edu/student-insurance/change-cancel.html"
+    },
+    {
+      "text": "SHIP Benefits & Plan Documents",
+      "url": "https://www.cmu.edu/student-insurance/plans.html"
+    },
+    {
+      "text": "SHIP Rates & Billing",
+      "url": "https://www.cmu.edu/student-insurance/payment.html"
+    },
+    {
+      "text": "Using the SHIP",
+      "url": "https://www.cmu.edu/student-insurance/ship.html"
+    },
+    {
+      "text": "International, Exchange, & Study Abroad Students",
+      "url": "https://www.cmu.edu/student-insurance/international-students-abroad/index.html"
+    },
+    {
+      "text": "Insurance Literacy",
+      "url": "https://www.cmu.edu/student-insurance/insurance-literacy.html"
+    },
+    {
+      "text": "Contacts & Common Questions",
+      "url": "https://www.cmu.edu/student-insurance/faqs.html"
+    },
+    {
+      "text": "Leaving CMU",
+      "url": "https://www.cmu.edu/health-services/leaving-cmu/index.html"
+    },
+    {
+      "text": "Services & Fees",
+      "url": "https://www.cmu.edu/services-and-fees/index.html"
+    },
+    {
+      "text": "COVID19",
+      "url": "https://www.cmu.edu/services-and-fees/covid19.html"
+    },
+    {
+      "text": "Sexual Assault Resources",
+      "url": "https://www.cmu.edu/services-and-fees/sexual-assault.html"
+    },
+    {
+      "text": "LGBTQIA+ Health",
+      "url": "https://www.cmu.edu/services-and-fees/lgbtqia+.html"
+    },
+    {
+      "text": "Sexual Health",
+      "url": "https://www.cmu.edu/services-and-fees/sexual-health.html"
+    },
+    {
+      "text": "Allergy Injections",
+      "url": "https://www.cmu.edu/services-and-fees/allergy-instructions.html"
+    },
+    {
+      "text": "Health Education & Resources",
+      "url": "https://www.cmu.edu/health-education-and-resources/index.html"
+    },
+    {
+      "text": "Culturally Responsive Bystander Intervention (CuRB)",
+      "url": "https://www.cmu.edu/health-education-and-resources/curb.html"
+    },
+    {
+      "text": "Local Healthcare Resources",
+      "url": "https://www.cmu.edu/health-education-and-resources/local-resources.html"
+    },
+    {
+      "text": "Peer Health Advocates",
+      "url": "https://www.cmu.edu/health-education-and-resources/peer-health/index.html"
+    },
+    {
+      "text": "Information for PHAs",
+      "url": "https://www.cmu.edu/health-education-and-resources/peer-health/information-for-phas/index.html"
+    },
+    {
+      "text": "Recovery and Harm Reduction",
+      "url": "https://www.cmu.edu/health-education-and-resources/recovery.html"
+    },
+    {
+      "text": "Wellness To Go Machines",
+      "url": "https://www.cmu.edu/health-education-and-resources/wellness-to-go-machines.html"
+    },
+    {
+      "text": "About Us",
+      "url": "https://www.cmu.edu/about-us/index.html"
+    },
+    {
+      "text": "UHS News",
+      "url": "https://www.cmu.edu/about-us/news/index.html"
+    },
+    {
+      "text": "Who We Are",
+      "url": "https://www.cmu.edu/about-us/who-we-are.html"
+    },
+    {
+      "text": "Leaving CMU",
+      "url": "https://www.cmu.edu/health-services/index.html"
+    }
+  ],
+  "contact_info": {
+    "phones": [
+      "412-268-2922",
+      "412-268-2157"
+    ],
+    "address": "p until our winter holiday closure.\nIf you are in Pittsburgh after that time and need services, we can help you find local providers for your health c"
+  },
+  "hours": [],
+  "services": [
+    {
+      "name": "Former students who no longer have access to HealthConnect must submit aConsent for Release of Medical Information Form (pdf).",
+      "description": ""
+    },
+    {
+      "name": "Please note that UHS maintains patient records for 10 years; we are unable to provide records beyond 10 years.",
+      "description": ""
+    },
+    {
+      "name": "Students who received care at Counseling & Psychological Services (CaPS) must contact CaPS directly to request mental health records, at 412-268-2922.",
+      "description": ""
+    },
+    {
+      "name": "Athletics, Physical Education & Recreation",
+      "description": ""
+    },
+    {
+      "name": "Career & Professional Development Center",
+      "description": ""
+    },
+    {
+      "name": "Center for Student Diversity & Inclusion",
+      "description": ""
+    },
+    {
+      "name": "Civility Initiatives",
+      "description": ""
+    },
+    {
+      "name": "Cohon University Center",
+      "description": ""
+    },
+    {
+      "name": "Community Health & Well-Being",
+      "description": ""
+    },
+    {
+      "name": "Community Responsibility",
+      "description": ""
+    },
+    {
+      "name": "Conference & Event Services",
+      "description": ""
+    },
+    {
+      "name": "Counseling & Psychological Services",
+      "description": ""
+    },
+    {
+      "name": "Dean of Students",
+      "description": ""
+    },
+    {
+      "name": "Dining Services",
+      "description": ""
+    },
+    {
+      "name": "Family Engagement",
+      "description": ""
+    },
+    {
+      "name": "First-Year Orientation",
+      "description": ""
+    },
+    {
+      "name": "Fraternity & Sorority Life",
+      "description": ""
+    },
+    {
+      "name": "Housing Services",
+      "description": ""
+    },
+    {
+      "name": "Pre-College Programs",
+      "description": ""
+    },
+    {
+      "name": "Residential Education",
+      "description": ""
+    },
+    {
+      "name": "Student Leadership, Involvement, & Civic Engagement",
+      "description": ""
+    },
+    {
+      "name": "Student Support Resources",
+      "description": ""
+    },
+    {
+      "name": "University Health Services",
+      "description": ""
+    },
+    {
+      "name": "Wellness & Meaning-Making Programs",
+      "description": ""
+    },
+    {
+      "name": "Accreditation Association for Ambulatory Health Care, Inc.",
+      "description": ""
+    },
+    {
+      "name": "Disability Resources",
+      "description": ""
+    },
+    {
+      "name": "Title IX Initiatives",
+      "description": ""
+    },
+    {
+      "name": "University Police",
+      "description": ""
+    },
+    {
+      "name": "University Policies",
+      "description": ""
+    },
+    {
+      "name": "HealthConnect",
+      "description": ""
+    },
+    {
+      "name": "New Students",
+      "description": ""
+    },
+    {
+      "name": "Family & Parents",
+      "description": ""
+    },
+    {
+      "name": "Student InsuranceEnroll in the SHIPWaive the SHIPChange or Cancel the SHIPSHIP Benefits & Plan DocumentsSHIP Rates & BillingUsing the SHIPInternational, Exchange, & Study Abroad StudentsInsurance LiteracyContacts & Common QuestionsLeaving CMU",
+      "description": ""
+    },
+    {
+      "name": "Enroll in the SHIP",
+      "description": ""
+    },
+    {
+      "name": "Waive the SHIP",
+      "description": ""
+    },
+    {
+      "name": "Change or Cancel the SHIP",
+      "description": ""
+    },
+    {
+      "name": "SHIP Benefits & Plan Documents",
+      "description": ""
+    },
+    {
+      "name": "SHIP Rates & Billing",
+      "description": ""
+    },
+    {
+      "name": "Using the SHIP",
+      "description": ""
+    },
+    {
+      "name": "International, Exchange, & Study Abroad Students",
+      "description": ""
+    },
+    {
+      "name": "Insurance Literacy",
+      "description": ""
+    },
+    {
+      "name": "Contacts & Common Questions",
+      "description": ""
+    },
+    {
+      "name": "Leaving CMU",
+      "description": ""
+    },
+    {
+      "name": "Services & FeesCOVID19Sexual Assault ResourcesLGBTQIA+ HealthSexual HealthAllergy Injections",
+      "description": ""
+    },
+    {
+      "name": "COVID19",
+      "description": ""
+    },
+    {
+      "name": "Sexual Assault Resources",
+      "description": ""
+    },
+    {
+      "name": "LGBTQIA+ Health",
+      "description": ""
+    },
+    {
+      "name": "Sexual Health",
+      "description": ""
+    },
+    {
+      "name": "Allergy Injections",
+      "description": ""
+    },
+    {
+      "name": "Health Education & ResourcesCulturally Responsive Bystander Intervention (CuRB)Local Healthcare ResourcesPeer Health AdvocatesInformation for PHAsRecovery and Harm ReductionWellness To Go Machines",
+      "description": ""
+    },
+    {
+      "name": "Culturally Responsive Bystander Intervention (CuRB)",
+      "description": ""
+    },
+    {
+      "name": "Local Healthcare Resources",
+      "description": ""
+    },
+    {
+      "name": "Peer Health AdvocatesInformation for PHAs",
+      "description": ""
+    },
+    {
+      "name": "Information for PHAs",
+      "description": ""
+    },
+    {
+      "name": "Recovery and Harm Reduction",
+      "description": ""
+    },
+    {
+      "name": "Wellness To Go Machines",
+      "description": ""
+    },
+    {
+      "name": "About UsUHS NewsWho We Are",
+      "description": ""
+    },
+    {
+      "name": "UHS News",
+      "description": ""
+    },
+    {
+      "name": "Who We Are",
+      "description": ""
+    },
+    {
+      "name": "Leaving CMU",
+      "description": ""
+    },
+    {
+      "name": "Enroll in the SHIP",
+      "description": ""
+    },
+    {
+      "name": "Waive the SHIP",
+      "description": ""
+    },
+    {
+      "name": "Change or Cancel the SHIP",
+      "description": ""
+    },
+    {
+      "name": "SHIP Benefits & Plan Documents",
+      "description": ""
+    },
+    {
+      "name": "SHIP Rates & Billing",
+      "description": ""
+    },
+    {
+      "name": "Using the SHIP",
+      "description": ""
+    },
+    {
+      "name": "International, Exchange, & Study Abroad Students",
+      "description": ""
+    },
+    {
+      "name": "Insurance Literacy",
+      "description": ""
+    },
+    {
+      "name": "Contacts & Common Questions",
+      "description": ""
+    },
+    {
+      "name": "Leaving CMU",
+      "description": ""
+    },
+    {
+      "name": "COVID19",
+      "description": ""
+    },
+    {
+      "name": "Sexual Assault Resources",
+      "description": ""
+    },
+    {
+      "name": "LGBTQIA+ Health",
+      "description": ""
+    },
+    {
+      "name": "Sexual Health",
+      "description": ""
+    },
+    {
+      "name": "Allergy Injections",
+      "description": ""
+    },
+    {
+      "name": "Culturally Responsive Bystander Intervention (CuRB)",
+      "description": ""
+    },
+    {
+      "name": "Local Healthcare Resources",
+      "description": ""
+    },
+    {
+      "name": "Peer Health AdvocatesInformation for PHAs",
+      "description": ""
+    },
+    {
+      "name": "Information for PHAs",
+      "description": ""
+    },
+    {
+      "name": "Recovery and Harm Reduction",
+      "description": ""
+    },
+    {
+      "name": "Wellness To Go Machines",
+      "description": ""
+    }
+  ],
+  "announcements": [],
+  "forms_and_resources": [
+    {
+      "name": "Consent for Release of Medical Information Form (pdf).",
+      "url": "https://www.cmu.edu/health-services/roi-2024.pdf#medical-records",
+      "type": "document"
+    },
+    {
+      "name": "",
+      "url": "https://www.cmu.edu/images/pdfs/consent-for-release-of-health-information.pdf",
+      "type": "document"
+    }
+  ],
+  "id": "7d8aab5e"
+}

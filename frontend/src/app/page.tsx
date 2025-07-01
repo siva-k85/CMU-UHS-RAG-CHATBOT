@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Heart, Send, Upload, Activity, Clock, Phone, MapPin, FileText, Sparkles, Bot, User, BarChart3 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 interface Citation {
   source: string
@@ -120,15 +121,21 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       {/* Header */}
-      <header className="border-b bg-white/80 dark:bg-gray-900/80 backdrop-blur-md sticky top-0 z-50">
+      <header className="border-b bg-white/90 dark:bg-gray-900/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <Heart className="h-8 w-8 text-red-600" />
-              <div>
-                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">CMU Health Services</h1>
+            <div className="flex items-center space-x-4">
+              <Image 
+                src="/cmu-logo.png" 
+                alt="Carnegie Mellon University" 
+                width={180} 
+                height={40}
+                className="dark:invert"
+              />
+              <div className="border-l pl-4 ml-2">
+                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Health Services</h1>
                 <p className="text-sm text-gray-600 dark:text-gray-400">AI-Powered Health Assistant</p>
               </div>
             </div>
@@ -159,24 +166,43 @@ export default function Home() {
           {/* Sidebar */}
           <div className="lg:col-span-1 space-y-4">
             {/* Quick Actions */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Quick Actions</CardTitle>
+            <Card className="border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <CardHeader className="bg-gradient-to-r from-red-600 to-red-700 text-white">
+                <CardTitle className="text-lg flex items-center">
+                  <Sparkles className="mr-2 h-5 w-5" />
+                  Quick Actions
+                </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-2">
-                <Button variant="outline" className="w-full justify-start" onClick={() => setInput('How do I schedule an appointment?')}>
+              <CardContent className="space-y-2 pt-4">
+                <Button 
+                  variant="outline" 
+                  className="w-full justify-start hover:bg-red-50 hover:text-red-700 hover:border-red-300 transition-colors" 
+                  onClick={() => setInput('How do I schedule an appointment?')}
+                >
                   <Activity className="mr-2 h-4 w-4" />
                   Schedule Appointment
                 </Button>
-                <Button variant="outline" className="w-full justify-start" onClick={() => setInput('What services are available?')}>
+                <Button 
+                  variant="outline" 
+                  className="w-full justify-start hover:bg-red-50 hover:text-red-700 hover:border-red-300 transition-colors" 
+                  onClick={() => setInput('What services are available?')}
+                >
                   <Heart className="mr-2 h-4 w-4" />
                   Available Services
                 </Button>
-                <Button variant="outline" className="w-full justify-start" onClick={() => setInput('What insurance do you accept?')}>
+                <Button 
+                  variant="outline" 
+                  className="w-full justify-start hover:bg-red-50 hover:text-red-700 hover:border-red-300 transition-colors" 
+                  onClick={() => setInput('What insurance do you accept?')}
+                >
                   <FileText className="mr-2 h-4 w-4" />
                   Insurance Info
                 </Button>
-                <Button variant="outline" className="w-full justify-start" onClick={() => setInput('Where is the health center located?')}>
+                <Button 
+                  variant="outline" 
+                  className="w-full justify-start hover:bg-red-50 hover:text-red-700 hover:border-red-300 transition-colors" 
+                  onClick={() => setInput('Where is the health center located?')}
+                >
                   <MapPin className="mr-2 h-4 w-4" />
                   Location & Hours
                 </Button>
@@ -184,16 +210,19 @@ export default function Home() {
             </Card>
 
             {/* Contact Info */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Contact Information</CardTitle>
+            <Card className="border-gray-200 shadow-sm">
+              <CardHeader className="bg-gray-50 dark:bg-gray-800">
+                <CardTitle className="text-lg flex items-center">
+                  <Phone className="mr-2 h-5 w-5 text-red-600" />
+                  Contact Information
+                </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3 text-sm">
                 <div className="flex items-start space-x-2">
                   <MapPin className="h-4 w-4 text-gray-500 mt-0.5" />
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-gray-600 dark:text-gray-400">1060 Morewood Avenue</p>
+                    <p className="text-gray-600 dark:text-gray-400">Highmark location only</p>
                     <p className="text-gray-600 dark:text-gray-400">Pittsburgh, PA 15213</p>
                   </div>
                 </div>
@@ -352,6 +381,22 @@ export default function Home() {
           </div>
         </div>
       </div>
+      
+      {/* Footer */}
+      <footer className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-t mt-8">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex items-center space-x-2">
+              <span>Made with</span>
+              <Heart className="h-4 w-4 text-red-500 fill-current" />
+              <span>by <strong>Siva Komaragiri</strong> - MSHCA alum</span>
+            </div>
+            <div className="flex items-center space-x-4">
+              <span>© {new Date().getFullYear()} Carnegie Mellon University</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }

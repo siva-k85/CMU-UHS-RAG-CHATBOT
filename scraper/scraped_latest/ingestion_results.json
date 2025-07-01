@@ -1,0 +1,156 @@
+{
+  "timestamp": "2025-06-30T20:32:11.652709",
+  "summary": {
+    "total": 35,
+    "successful": 35,
+    "failed": 0
+  },
+  "results": [
+    {
+      "file": "cmu_health_services_latest.md",
+      "status": "success",
+      "response": {
+        "filename": "cmu_health_services_latest.md",
+        "size": 238988,
+        "source": "upload",
+        "message": "Document uploaded successfully"
+      }
+    },
+    {
+      "file": "35c375ac.json",
+      "status": "success"
+    },
+    {
+      "file": "3e8c0c02.json",
+      "status": "success"
+    },
+    {
+      "file": "637cb087.json",
+      "status": "success"
+    },
+    {
+      "file": "e41af9a6.json",
+      "status": "success"
+    },
+    {
+      "file": "b2c11d0b.json",
+      "status": "success"
+    },
+    {
+      "file": "d7e32524.json",
+      "status": "success"
+    },
+    {
+      "file": "4a72f22e.json",
+      "status": "success"
+    },
+    {
+      "file": "83ebe386.json",
+      "status": "success"
+    },
+    {
+      "file": "0ee12dc3.json",
+      "status": "success"
+    },
+    {
+      "file": "baa22e89.json",
+      "status": "success"
+    },
+    {
+      "file": "7d8aab5e.json",
+      "status": "success"
+    },
+    {
+      "file": "dda73358.json",
+      "status": "success"
+    },
+    {
+      "file": "ff357661.json",
+      "status": "success"
+    },
+    {
+      "file": "74424eeb.json",
+      "status": "success"
+    },
+    {
+      "file": "5485555d.json",
+      "status": "success"
+    },
+    {
+      "file": "5944c7d2.json",
+      "status": "success"
+    },
+    {
+      "file": "bb09e454.json",
+      "status": "success"
+    },
+    {
+      "file": "e7aae902.json",
+      "status": "success"
+    },
+    {
+      "file": "d202419d.json",
+      "status": "success"
+    },
+    {
+      "file": "7640565b.json",
+      "status": "success"
+    },
+    {
+      "file": "8bf13014.json",
+      "status": "success"
+    },
+    {
+      "file": "2a04c331.json",
+      "status": "success"
+    },
+    {
+      "file": "130e61c6.json",
+      "status": "success"
+    },
+    {
+      "file": "85f50058.json",
+      "status": "success"
+    },
+    {
+      "file": "d533bb02.json",
+      "status": "success"
+    },
+    {
+      "file": "859a2ea0.json",
+      "status": "success"
+    },
+    {
+      "file": "a3d2eb78.json",
+      "status": "success"
+    },
+    {
+      "file": "94b0fbc9.json",
+      "status": "success"
+    },
+    {
+      "file": "baf7ed40.json",
+      "status": "success"
+    },
+    {
+      "file": "2f065a9d.json",
+      "status": "success"
+    },
+    {
+      "file": "b3bcabc6.json",
+      "status": "success"
+    },
+    {
+      "file": "cba0e13e.json",
+      "status": "success"
+    },
+    {
+      "file": "c71be392.json",
+      "status": "success"
+    },
+    {
+      "file": "eb5ccb4a.json",
+      "status": "success"
+    }
+  ]
+}
