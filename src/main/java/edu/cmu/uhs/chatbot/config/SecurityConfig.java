@@ -52,6 +52,7 @@ public class SecurityConfig {
 }
 
 @Configuration
+@EnableWebSecurity
 @Profile("dev")
 class DevSecurityConfig {
     

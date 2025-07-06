@@ -18,6 +18,7 @@ public class EnhancedChatbotService {
     
     private final VectorStoreService vectorStoreService;
     private final AnthropicService anthropicService;
+    private final CacheService cacheService;
     
     @Value("${ANTHROPIC_API_KEY:${anthropic.api.key:demo}}")
     private String anthropicApiKey;
@@ -30,6 +31,15 @@ public class EnhancedChatbotService {
     public Map<String, Object> chatWithCitations(String userMessage) {
         log.info("Processing user message with citations: {}", userMessage);
         
+        // Check cache first
+        String cacheKey = "chat_response_" + userMessage.hashCode();
+        Map<String, Object> cachedResponse = cacheService.getCachedChatResponse(cacheKey);
+        if (cachedResponse != null) {
+            log.debug("Returning cached response for query: {}", userMessage);
+            cachedResponse.put("cached", true);
+            return cachedResponse;
+        }
+        
         Map<String, Object> response = new HashMap<>();
         
         try {
@@ -37,6 +47,9 @@ public class EnhancedChatbotService {
             List<TextSegment> relevantSegments = vectorStoreService.findRelevantSegments(
                 userMessage, MAX_RELEVANT_DOCUMENTS
             );
+            
+            // Calculate confidence score based on relevance
+            double confidenceScore = calculateConfidenceScore(relevantSegments);
             
             // Extract citations from metadata
             List<Map<String, String>> citations = extractCitations(relevantSegments);
@@ -77,8 +90,12 @@ public class EnhancedChatbotService {
             response.put("response", aiResponse);
             response.put("citations", citations);
             response.put("sources_used", relevantSegments.size());
+            response.put("confidence", confidenceScore);
             
-            log.info("Generated response with {} citations", citations.size());
+            // Cache the response
+            cacheService.cacheChatResponse(cacheKey, response);
+            
+            log.info("Generated response with {} citations and confidence {}", citations.size(), confidenceScore);
             return response;
             
         } catch (Exception e) {
@@ -170,5 +187,27 @@ public class EnhancedChatbotService {
         response.append("\n\n[Note: Running in demo mode. For more detailed responses, please configure an OpenAI API key.]");
         
         return response.toString();
+    }
+    
+    private double calculateConfidenceScore(List<TextSegment> segments) {
+        if (segments.isEmpty()) {
+            return 0.3; // Low confidence if no relevant segments found
+        }
+        
+        // Calculate average relevance based on segment count and metadata
+        double baseScore = Math.min(0.9, 0.5 + (segments.size() * 0.1));
+        
+        // Boost confidence if we have diverse sources
+        Set<String> uniqueSources = segments.stream()
+            .map(s -> s.metadata().get("source"))
+            .filter(Objects::nonNull)
+            .collect(Collectors.toSet());
+        
+        if (uniqueSources.size() > 1) {
+            baseScore += 0.05;
+        }
+        
+        // Ensure score is between 0 and 1
+        return Math.min(1.0, Math.max(0.0, baseScore));
     }
 }

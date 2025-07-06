@@ -12,6 +12,7 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import dev.langchain4j.data.segment.TextSegment;
 
 @Service
 @RequiredArgsConstructor
@@ -108,5 +109,37 @@ public class CacheService {
             log.warn("Failed to get cache size for {}: {}", cacheName, e.getMessage());
             return 0L;
         }
+    }
+    
+    // Enhanced methods for new services
+    @Cacheable(value = "chatResponsesV2", key = "#cacheKey", unless = "#result == null")
+    public Map<String, Object> getCachedChatResponse(String cacheKey) {
+        log.debug("Cache miss for chat response: {}", cacheKey);
+        return null;
+    }
+    
+    @CachePut(value = "chatResponsesV2", key = "#cacheKey")
+    public Map<String, Object> cacheChatResponse(String cacheKey, Map<String, Object> response) {
+        log.debug("Caching chat response for key: {}", cacheKey);
+        updateCacheStats("chatResponsesV2");
+        return response;
+    }
+    
+    @Cacheable(value = "vectorSearch", key = "#cacheKey", unless = "#result == null")
+    public List<TextSegment> getCachedVectorSearch(String cacheKey) {
+        log.debug("Cache miss for vector search: {}", cacheKey);
+        return null;
+    }
+    
+    @CachePut(value = "vectorSearch", key = "#cacheKey")
+    public List<TextSegment> cacheVectorSearch(String cacheKey, List<TextSegment> results) {
+        log.debug("Caching vector search results for key: {}", cacheKey);
+        updateCacheStats("vectorSearch");
+        return results;
+    }
+    
+    @CacheEvict(value = "vectorSearch", allEntries = true)
+    public void clearVectorSearchCache() {
+        log.info("Clearing vector search cache");
     }
 }
